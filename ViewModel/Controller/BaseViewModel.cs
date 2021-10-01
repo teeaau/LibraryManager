@@ -8,5 +8,10 @@ namespace ViewModel.Controller
 {
     class BaseViewModel
     {
+        public void AB()
+        {
+
+        }
+        //hjghhghghg
     }
 }
