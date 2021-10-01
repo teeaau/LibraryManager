@@ -29,12 +29,23 @@ namespace UI.Views
         /// </summary>
         private void InitializeComponent()
         {
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(156, 82);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(304, 163);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Lập thẻ";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // CreateCardView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button1);
             this.Name = "CreateCardView";
             this.Size = new System.Drawing.Size(646, 376);
             this.ResumeLayout(false);
@@ -42,5 +53,7 @@ namespace UI.Views
         }
 
         #endregion
+
+        private System.Windows.Forms.Button button1;
     }
 }

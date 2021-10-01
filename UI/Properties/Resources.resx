@@ -46,7 +46,7 @@
     
     mimetype: application/x-microsoft.net.object.binary.base64
     value   : The object must be serialized with 
-            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
     
     mimetype: application/x-microsoft.net.object.soap.base64
@@ -60,6 +60,7 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
@@ -68,9 +69,10 @@
               <xsd:sequence>
                 <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="name" use="required" type="xsd:string" />
               <xsd:attribute name="type" type="xsd:string" />
               <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
@@ -85,9 +87,10 @@
                 <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
                 <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
               <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
               <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
@@ -109,9 +112,322 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="icons8-add-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-add-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-address-book-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-address-book-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-add-to-favorites-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-add-to-favorites-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-adjust-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-adjust-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-answers-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-answers-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-available-updates-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-available-updates-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-browse-page-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-browse-page-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-cancel-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-cancel-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-candlestick-chart-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-candlestick-chart-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-checked-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-checked-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-checked-checkbox-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-checked-checkbox-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-checklist-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-checklist-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-checkmark-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-checkmark-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-clear-symbol-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-clear-symbol-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-collect-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-collect-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-comments-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-comments-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-customer-support-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-customer-support-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-decrease-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-decrease-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-delete-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-delete-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-delete-bin-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-delete-bin-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-double-tick-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-double-tick-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-download-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-download-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-downloading-updates-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-downloading-updates-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-email-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-email-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-email-sign-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-email-sign-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-enter-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-enter-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-error-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-error-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-exit-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-exit-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-facebook-like-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-facebook-like-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-face-id-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-face-id-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-faq-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-faq-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-feedback-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-feedback-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-flow-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-flow-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-form-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-form-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-four-squares-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-four-squares-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-full-image-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-full-image-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-gear-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-gear-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-help-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-help-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-hierarchy-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-hierarchy-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-home-page-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-home-page-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-increase-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-increase-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-info-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-info-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-info-popup-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-info-popup-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-in-progress-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-in-progress-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-input-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-input-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-installing-updates-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-installing-updates-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-iphone-spinner-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-iphone-spinner-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-list-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-list-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-loading-bar-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-loading-bar-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-loading-sign-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-loading-sign-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-login-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-login-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-logout-rounded-down-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-logout-rounded-down-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-logout-rounded-left-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-logout-rounded-left-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-logout-rounded-up-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-logout-rounded-up-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-maintenance-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-maintenance-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-maximize-window-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-maximize-window-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-menu-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-menu-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-menu-squared-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-menu-squared-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-menu-squared-50-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-menu-squared-50-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-menu-vertical-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-menu-vertical-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-mind-map-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-mind-map-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-minimize-window-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-minimize-window-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-multiply-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-multiply-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-neutral-trading-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-neutral-trading-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-notification-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-notification-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-numbered-list-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-numbered-list-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-online-support-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-online-support-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-open-in-browser-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-open-in-browser-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-original-size-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-original-size-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-password-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-password-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-picture-in-picture-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-picture-in-picture-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-privacy-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-privacy-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-questions-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-questions-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-replace-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-replace-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-save-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-save-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-save-all-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-save-all-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-save-as-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-save-as-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-save-close-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-save-close-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-search-for-love-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-search-for-love-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-search-more-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-search-more-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-select-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-select-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-sign-out-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-sign-out-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-squared-menu-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-squared-menu-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-support-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-support-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-tasks-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-tasks-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-technical-support-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-technical-support-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-terms-and-conditions-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-terms-and-conditions-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-tick-box-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-tick-box-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-touch-id-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-touch-id-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-trash-can-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-trash-can-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-tree-structure-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-tree-structure-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-tune-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-tune-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-unchecked-checkbox-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-unchecked-checkbox-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-unit-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-unit-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-upload-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-upload-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-user-manual-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-user-manual-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-user-menu-female-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-user-menu-female-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-user-menu-male-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-user-menu-male-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-view-details-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-view-details-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-web-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-web-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-web-analytics-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-web-analytics-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-work-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-work-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-workflow-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-workflow-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-xlarge-icons-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-xlarge-icons-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
