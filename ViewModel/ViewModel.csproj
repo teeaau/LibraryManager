@@ -61,7 +61,7 @@
   <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Data\Data.csproj">
-      <Project>{22f3a22d-ab20-4b9f-839c-584a5e4f62d8}</Project>
+      <Project>{f9d8490a-4ea6-4cef-a90f-011248f7fcb1}</Project>
       <Name>Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
