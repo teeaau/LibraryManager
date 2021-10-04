@@ -18,6 +18,7 @@ namespace UI.ViewModels
             this.title = title;
             ControlManager.Get<Button>(tabHeader, "btnTabTitle").Text = title;
             tabView = view;
+            tabView.Dock = DockStyle.Fill;
             ControlManager.Get<Button>(tabHeader, "btnTabClose").Click +=
                 new EventHandler(delegate
                 {
