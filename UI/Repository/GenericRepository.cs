@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Data;
 
-namespace ViewModel.Repository
+namespace UI.Repository
 {
 
     public class GenericRepository<TEntity>

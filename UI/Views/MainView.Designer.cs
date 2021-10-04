@@ -31,13 +31,13 @@ namespace UI.Views
         {
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pnlNav = new System.Windows.Forms.Panel();
-            this.pnlTabHeader = new System.Windows.Forms.Panel();
-            this.pnlTabView = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnResize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.pnlNav = new System.Windows.Forms.Panel();
+            this.pnlTabHeader = new System.Windows.Forms.Panel();
+            this.pnlTabView = new System.Windows.Forms.Panel();
             this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -67,35 +67,6 @@ namespace UI.Views
             this.label1.TabIndex = 4;
             this.label1.Text = "Quản lý thư viện";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // pnlNav
-            // 
-            this.pnlNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(93)))), ((int)(((byte)(93)))));
-            this.pnlNav.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pnlNav.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlNav.Location = new System.Drawing.Point(0, 30);
-            this.pnlNav.Name = "pnlNav";
-            this.pnlNav.Size = new System.Drawing.Size(300, 670);
-            this.pnlNav.TabIndex = 1;
-            // 
-            // pnlTabHeader
-            // 
-            this.pnlTabHeader.BackColor = System.Drawing.Color.Transparent;
-            this.pnlTabHeader.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlTabHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTabHeader.Location = new System.Drawing.Point(300, 30);
-            this.pnlTabHeader.Name = "pnlTabHeader";
-            this.pnlTabHeader.Size = new System.Drawing.Size(925, 25);
-            this.pnlTabHeader.TabIndex = 2;
-            // 
-            // pnlTabView
-            // 
-            this.pnlTabView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlTabView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlTabView.Location = new System.Drawing.Point(300, 55);
-            this.pnlTabView.Name = "pnlTabView";
-            this.pnlTabView.Size = new System.Drawing.Size(925, 645);
-            this.pnlTabView.TabIndex = 3;
             // 
             // pictureBox1
             // 
@@ -146,6 +117,35 @@ namespace UI.Views
             this.btnClose.Size = new System.Drawing.Size(30, 30);
             this.btnClose.TabIndex = 0;
             this.btnClose.UseVisualStyleBackColor = true;
+            // 
+            // pnlNav
+            // 
+            this.pnlNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(93)))), ((int)(((byte)(93)))));
+            this.pnlNav.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlNav.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlNav.Location = new System.Drawing.Point(0, 30);
+            this.pnlNav.Name = "pnlNav";
+            this.pnlNav.Size = new System.Drawing.Size(300, 670);
+            this.pnlNav.TabIndex = 1;
+            // 
+            // pnlTabHeader
+            // 
+            this.pnlTabHeader.BackColor = System.Drawing.Color.Transparent;
+            this.pnlTabHeader.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlTabHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTabHeader.Location = new System.Drawing.Point(300, 30);
+            this.pnlTabHeader.Name = "pnlTabHeader";
+            this.pnlTabHeader.Size = new System.Drawing.Size(925, 25);
+            this.pnlTabHeader.TabIndex = 2;
+            // 
+            // pnlTabView
+            // 
+            this.pnlTabView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlTabView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlTabView.Location = new System.Drawing.Point(300, 55);
+            this.pnlTabView.Name = "pnlTabView";
+            this.pnlTabView.Size = new System.Drawing.Size(925, 645);
+            this.pnlTabView.TabIndex = 3;
             // 
             // MainView
             // 
