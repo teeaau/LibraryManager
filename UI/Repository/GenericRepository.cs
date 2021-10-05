@@ -23,7 +23,7 @@ where TEntity : class
             Context.Set<TEntity>().Add(model);
         }
 
-        public async Task<IEnumerable<TEntity>> GetAllAsync()
+        public virtual async Task<List<TEntity>> GetAllAsync()
         {
             return await Context.Set<TEntity>().ToListAsync();
         }

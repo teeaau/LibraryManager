@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI.Views
+namespace UI.Styles
 {
-    public partial class ReceiveBookView : UserControl
+    public partial class BookLayoutStyle : UserControl
     {
-        public ReceiveBookView()
+        public BookLayoutStyle()
         {
             InitializeComponent();
         }

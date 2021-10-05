@@ -32,6 +32,8 @@ namespace UI.Styles
             {
                 for (int j = 0; j < cols; j++)
                 {
+                    if (data[i - 1][j] == null)
+                        continue;
                     wSize[j] = Math.Max(wSize[j], data[i - 1][j].Length * 11 + 30);
                 }
             }

@@ -60,6 +60,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\DocGiaRepository.cs" />
     <Compile Include="Repository\GenericRepository.cs" />
+    <Compile Include="Repository\MuonSachRepository.cs" />
+    <Compile Include="Repository\SachRepository.cs" />
+    <Compile Include="Styles\BookLayoutStyle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Styles\BookLayoutStyle.Designer.cs">
+      <DependentUpon>BookLayoutStyle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Styles\NavItemStyle.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -74,9 +82,9 @@
     <Compile Include="ViewModels\BorrowBookViewModel.cs" />
     <Compile Include="ViewModels\ControlManager.cs" />
     <Compile Include="ViewModels\CreateCardViewModel.cs" />
+    <Compile Include="ViewModels\IViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\NavViewModel.cs" />
-    <Compile Include="ViewModels\ReceiveBookViewModel.cs" />
     <Compile Include="ViewModels\ReturnBookViewModel.cs" />
     <Compile Include="ViewModels\TabManager.cs" />
     <Compile Include="Views\BorrowBookView.cs">
@@ -97,12 +105,6 @@
     <Compile Include="Views\MainView.Designer.cs">
       <DependentUpon>MainView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\ReceiveBookView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\ReceiveBookView.Designer.cs">
-      <DependentUpon>ReceiveBookView.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\ReturnBookView.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -119,6 +121,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Styles\BookLayoutStyle.resx">
+      <DependentUpon>BookLayoutStyle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Styles\TabStyle.resx">
       <DependentUpon>TabStyle.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,9 +135,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\MainView.resx">
       <DependentUpon>MainView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\ReceiveBookView.resx">
-      <DependentUpon>ReceiveBookView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\ReturnBookView.resx">
       <DependentUpon>ReturnBookView.cs</DependentUpon>

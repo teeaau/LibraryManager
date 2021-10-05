@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using UI.Styles;
+using UI.Views;
+
 namespace UI.ViewModels
 {
     public class Tab
@@ -13,9 +15,11 @@ namespace UI.ViewModels
         public TabStyle tabHeader = new TabStyle();
         public Control tabView = new Control();
         public string title;
-        public Tab(string title, Control view)
+        public IViewModel viewModel;
+        public Tab(string title, Control view, IViewModel viewModel)
         {
             this.title = title;
+            this.viewModel = viewModel;
             ControlManager.Get<Button>(tabHeader, "btnTabTitle").Text = title;
             tabView = view;
             tabView.Dock = DockStyle.Fill;
@@ -43,6 +47,21 @@ namespace UI.ViewModels
         }
         public static void OpenTab(Tab tab)
         {
+            if (tab.viewModel is CreateCardViewModel)
+            {
+                tab.tabView = new CreateCardView();
+                tab.viewModel = new CreateCardViewModel(tab.tabView);
+            }
+            if (tab.viewModel is BorrowBookViewModel)
+            {
+                tab.tabView = new BorrowBookView();
+                tab.viewModel = new BorrowBookViewModel(tab.tabView);
+            }
+            if (tab.viewModel is ReturnBookViewModel)
+            {
+                tab.tabView = new ReturnBookView();
+                tab.viewModel = new ReturnBookViewModel(tab.tabView);
+            }
             var tb = tabs.FirstOrDefault(t => t.title == tab.title);
             if(tb != null)
             {
@@ -73,7 +92,7 @@ namespace UI.ViewModels
             tabs.Remove(tab);
             if (tabs.Count == 0)
                 return;
-            FocusTab(tabs[Math.Min(idx, tabs.Count - 1)]);
+            FocusTab(tabs[Math.Min(idx, tabs.Count - 1)]);            
             Reload();
         }
         static void Reload()
