@@ -13,11 +13,13 @@ namespace UI.ViewModels
         public NavItemStyle item;
         public string display;
         public Control view;
-        public NavItem(string display, Control view)
+        public IViewModel viewModel;
+        public NavItem(string display, Control view, IViewModel viewModel)
         {
             item = new NavItemStyle(display);            
             this.display = display;
             this.view = view;
+            this.viewModel = viewModel;
         }
     }
     public class NavViewModel
@@ -33,24 +35,17 @@ namespace UI.ViewModels
         {
             var BorrowBook = new BorrowBookView();
             var CreateCard = new CreateCardView();
-            var ReceiveBook = new ReceiveBookView();
             var ReturnBook = new ReturnBookView();
 
-            new BorrowBookViewModel(BorrowBook);
-            new CreateCardViewModel(CreateCard);
-            new ReceiveBookViewModel(ReceiveBook);
-            new ReturnBookViewModel(ReturnBook);
-
-            navItems.Add(new NavItem("Muợn sách", BorrowBook));
-            navItems.Add(new NavItem("Lập thẻ", CreateCard));
-            navItems.Add(new NavItem("Nhận sách", ReceiveBook));
-            navItems.Add(new NavItem("Trả sách",ReturnBook));
+            navItems.Add(new NavItem("Muợn sách", BorrowBook, new BorrowBookViewModel(BorrowBook)));
+            navItems.Add(new NavItem("Lập thẻ", CreateCard, new CreateCardViewModel(CreateCard)));
+            navItems.Add(new NavItem("Trả sách",ReturnBook, new ReturnBookViewModel(ReturnBook)));
 
             foreach(var ni in navItems)
             {
                 ni.item.Click += new EventHandler(delegate
                 {
-                    TabManager.OpenTab(new Tab(ni.display, ni.view));
+                    TabManager.OpenTab(new Tab(ni.display, ni.view, ni.viewModel));
                 });
                 Nav.Controls.Add(ni.item);
             }
